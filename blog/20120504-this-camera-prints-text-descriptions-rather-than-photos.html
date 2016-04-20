@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><title>Syrinx</title><link rel="stylesheet" href="/assets/css/font-awesome.min.css"><link rel="stylesheet" href="/assets/css/pure-min.css"><link rel="stylesheet" href="/app.css"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="/app.js" charset="utf-8"></script></head><body onload="classify()"><header><img src="/assets/img/syrinx_logo.svg"> <a href="#" id="bars" onclick="toggleNav(event)"><i class="fa fa-bars"></i></a><nav><a href="/" id="homeLink">Home</a> <a href="/services" id="servicesLink">Services</a> <a href="/case-studies" id="caseStudiesLink">Case Studies</a> <a href="/company" id="companyLink">Company</a> <a href="/blog" id="blogLink">Blog</a> <a href="/jobs" id="jobsLink">Jobs</a> <a href="/contact" id="contactLink">Contact</a></nav></header><div id="billboard"><h1></h1></div><div class="shim"></div><main><article><h1>This camera prints text descriptions rather than photos</h1><p><img alt="" src="http://syrinx.cl-subdomains.com/wp-content/uploads/sites/72/2012/04/descriptive-camera.jpg"> There is a humorous parody account on Twitter by the handle <a href="https://twitter.com/#!/textinstagram">@textinstagram</a> which posts the usual suspects that you&#39;d find on your Instagram feed, but in text form. Some gems among them are &quot;Deadpan stare, no filter&quot;, &quot;Airplane wing as viewed from two seats back&quot;, and the simple yet effective, &quot;Feet&quot;. Believe it or not, NYU student and technologist Matt Richardson was able to construct an actual camera that essentially does just that. The hardware powering the camera consists of <a href="http://beagleboard.org/bone">BeagleBone</a>, which is an embedded Linux platform developed by Texas Instruments, connected to a basic webcam, a printer, a shutter button, and three LED status lights. These are all brought together using a few Python scripts to handle the basic operations. Richardson explains that by compiling descriptions of photos, we&#39;ll be able to better organize the flood of data that is a product of photo sharing&#39;s increasing popularity:</p><blockquote><p>As we amass an incredible amount of photos, it becomes increasingly difficult to manage our collections. Imagine if descriptive metadata about each photo could be appended to the image on the fly—information about who is in each photo, what they&#39;re doing, and their environment could become incredibly useful in being able to search, filter, and cross-reference our photo collections. Of course, we don&#39;t yet have the technology that makes this a practical proposition, but the Descriptive Camera explores these possibilities.</p></blockquote><p>Much to the dismay, I&#39;m sure, of the techies reading this, there&#39;s no magic ingredient that allows the camera to convert images into text on its own. Richardson utilized <a href="https://www.mturk.com/mturk/welcome">Amazon&#39;s Mechanical Turk</a> project, a place where people can request fairly simple Human Intelligence Tasks (aka HITs) that others can complete for a small compensation. Each time Richards&#39;s camera takes a photo it creates an HIT for someone to complete. Once the HIT is completed, the camera prints out the description. Richards reports that by setting the reward of each HIT at $1.25, he usually gets results back within 3-6 minutes. The site has its own approval and reputation system, which deters users from providing poor results. Some examples from the camera are below: <img alt="This is a faded picture of a dilapidated building. It seems to be run down and in the need of repirs." src="http://mattrichardson.com/Descriptive-Camera/images/building.jpg"></p><pre><code>	-----------------------------------
+	| |                             | |
+	| |                             | |
+	| |   This is a faded picture   | |
+	| |      of a dilapidated       | |
+	| |  building. It seems to be   | |
+	| | run down and in the need of | |
+	| |           repirs.           | |
+	| |                             | |
+	| |                             | |
+	| ------------------------------- |
+	|                                 |
+	|                                 |
+	-----------------------------------</code></pre><p><img alt="Looks like a cupboard which is ugly and old having name plates on it with a study lamp attached to it." src="http://mattrichardson.com/Descriptive-Camera/images/bins.jpg"></p><pre><code>	-----------------------------------
+	| |                             | |
+	| |                             | |
+	| |    Looks like a cupboard    | |
+	| |    which is ugly and old    | |
+	| |  having name plates on it   | |
+	| |      with a study lamp      | |
+	| |       attached to it.       | |
+	| |                             | |
+	| |                             | |
+	| ------------------------------- |
+	|                                 |
+	|                                 |
+	-----------------------------------</code></pre><p><img alt="Corner of a wood floored room with a tool chest, bike, stack of books, box leaning against the wall, an open door with a bag hanging off the doorknob, and a pair of closed double doors with cables hanging on the handles." src="http://mattrichardson.com/Descriptive-Camera/images/room.jpg"></p><pre><code>	-----------------------------------
+	| |  Corner of a wood floored   | |
+	| |   room with a tool chest,   | |
+	| |  bike, stack of books, box  | |
+	| |  leaning against the wall,  | |
+	| |   an open door with a bag   | |
+	| |  hanging off the doorknob,  | |
+	| |     and a pair of closed    | |
+	| |  double doors with cables   | |
+	| |   hanging on the handles.   | |
+	| ------------------------------- |
+	|                                 |
+	|                                 |
+	-----------------------------------</code></pre><p>Obviously the idea is very primitive at this point and, frankly, has yet to be very practical. However, the concept addresses the possibility of allowing photos, and perhaps even video, to be indexed and searchable, which is something that provides serious value both personally and professionally. <a href="http://mattrichardson.com/Descriptive-Camera/">Check out Richards&#39;s website</a> for more information, photos, and press reaction about his Descriptive Camera project.</p></article></main><div class="shim reversed"></div><aside><h1>Have a project we can help with?</h1><a href="/contact">Talk To Us <i class="fa fa-arrow-circle-right"></i></a></aside><div class="shim"></div><footer><nav><a href="/">Home</a> <a href="/services">Services</a> <a href="/case-studies">Case Studies</a> <a href="/company">Company</a> <a href="/blog">Blog</a> <a href="/jobs">Jobs</a> <a href="/contact">Contact</a></nav><p id="social"><a href="https://www.facebook.com/SyrinxConsulting"><i class="fa fa-facebook-official"></i></a> <a href="https://twitter.com/SyrinxCo"><i class="fa fa-twitter"></i></a> <a href="https://medium.com/@SyrinxCo"><i class="fa fa-medium"></i></a> <a href="https://github.com/SyrinxConsulting"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/company/syrinx-consulting-corporation"><i class="fa fa-linkedin-square"></i></a></p><p>Copyright &copy; 2016 Syrinx Consulting Corporation. All Rights reserved.</p></footer></body></html>
