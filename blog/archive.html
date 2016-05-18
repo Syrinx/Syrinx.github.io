@@ -4,6 +4,12 @@
   <title>Syrinx</title>
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/pure-min.css">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
   <link rel="stylesheet" href="/app.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="/app.js" charset="utf-8"></script>
@@ -66,5 +72,12 @@
     <p>Copyright &copy; 2016 Syrinx Consulting Corporation. All Rights reserved.</p>
   </footer>
 
+  <script type="text/javascript">
+    //<![CDATA[
+    var DID=245563;
+    var pssl=(window.location.protocol == "https:") ? "https://stats.sa-as.com/lib.js":"http://stats.sa-as.com/lib.js";
+    document.writeln('<scr'+'ipt async src="'+pssl+'" type="text\/javascript"><\/scr'+'ipt>');
+    //]]>
+  </script>
 </body>
 </html>
