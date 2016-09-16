@@ -1,4 +1,4 @@
-var classify, filterPosts, toggleNav;
+var classify, filterPosts, insertMarkdown, toggleNav;
 
 classify = function() {
   var path;
@@ -19,7 +19,6 @@ toggleNav = function(event) {
 
 filterPosts = function() {
   var i, j, len, len1, post, posts, query, results, results1;
-  console.log('filtering');
   query = document.getElementById('search').value.toLowerCase();
   posts = document.getElementsByClassName('searchable');
   if (query.length > 0) {
@@ -45,4 +44,16 @@ filterPosts = function() {
     }
     return results1;
   }
+};
+
+insertMarkdown = function(from, into) {
+  var xhr;
+  xhr = new XMLHttpRequest();
+  xhr.open('GET', from);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      return document.getElementById(into).innerHTML = marked(xhr.responseText);
+    }
+  };
+  return xhr.send();
 };
