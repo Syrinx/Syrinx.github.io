@@ -3,7 +3,8 @@ var classify, filterPosts, insertMarkdown, toggleNav;
 classify = function() {
   var path;
   path = window.location.pathname.split('/')[1];
-  return document.getElementsByTagName('body')[0].className = path || 'home';
+  document.getElementsByTagName('body')[0].className = path || 'home';
+  return document.getElementsByTagName('link')[0].setAttribute('href', window.location);
 };
 
 toggleNav = function(event) {
