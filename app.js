@@ -4,7 +4,8 @@ classify = function() {
   var path;
   path = window.location.pathname.split('/')[1];
   document.getElementsByTagName('body')[0].className = path || 'home';
-  return document.getElementsByTagName('link')[0].setAttribute('href', window.location);
+  document.getElementsByTagName('link')[0].setAttribute('href', window.location);
+  return document.getElementsByTagName('link')[1].setAttribute('href', window.location);
 };
 
 toggleNav = function(event) {

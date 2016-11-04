@@ -1,10 +1,67 @@
-<!DOCTYPE html><html><head><title>Syrinx</title><link rel="publisher" href=""><link rel="icon" href="/assets/img/favicon.png" type="image/png"><link rel="stylesheet" href="/assets/css/font-awesome.min.css"><link rel="stylesheet" href="/assets/css/pure-min.css"><!--[if lte IE 8]>
+<!DOCTYPE html><html><head><title>Syrinx</title><link rel="publisher" href=""><link rel="canonical" href=""><link rel="icon" href="/assets/img/favicon.png" type="image/png"><link rel="stylesheet" href="/assets/css/font-awesome.min.css"><link rel="stylesheet" href="/assets/css/pure-min.css"><!--[if lte IE 8]>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-  <![endif]--><link rel="stylesheet" href="/app.css"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="/assets/js/marked.js" charset="utf-8"></script><script src="/app.js" charset="utf-8"></script></head><body onload="classify()"><header><a href="/"><img src="/assets/img/syrinx_logo.svg" alt="Syrinx Logo"></a><a href="#" id="bars" onclick="toggleNav(event)"><i class="fa fa-bars"></i></a><nav><a href="/services" id="servicesLink">Services</a> <a href="/case-studies" id="caseStudiesLink">Case Studies</a> <a href="/company" id="companyLink">Company</a> <a href="/blog" id="blogLink">Blog</a> <a href="/jobs" id="jobsLink">Jobs</a> <a href="/contact" id="contactLink">Contact</a></nav></header><div id="billboard"><h1></h1></div><div class="shim"></div><main><article>--- permalink: /404.html ---<script>if (window.location.href.indexOf("/hangout") > -1) {
-    window.location = "http://tinyurl.com/syrinxhangout";
-  } else {
-    window.location = "http://www.syrinx.com/notfound";
-  }</script></article></main><div class="shim reversed"></div><aside><h1>Have a project we can help with?</h1><a href="/contact">Talk To Us <i class="fa fa-arrow-circle-right"></i></a></aside><div class="shim"></div><footer><nav><a href="/services">Services</a> <a href="/case-studies">Case Studies</a> <a href="/company">Company</a> <a href="/blog">Blog</a> <a href="/jobs">Jobs</a> <a href="/contact">Contact</a></nav><p id="social"><a href="https://www.facebook.com/SyrinxConsulting"><i class="fa fa-facebook-official"></i></a> <a href="https://twitter.com/SyrinxCo"><i class="fa fa-twitter"></i></a> <a href="https://medium.com/@SyrinxCo"><i class="fa fa-medium"></i></a> <a href="https://github.com/SyrinxConsulting"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/company/syrinx-consulting-corporation"><i class="fa fa-linkedin-square"></i></a></p><p>Copyright &copy; 2016 Syrinx Consulting Corporation. All Rights reserved.</p></footer><script type="text/javascript">(function (i, s, o, g, r, a, m) {
+  <![endif]--><link rel="stylesheet" href="/app.css"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="/assets/js/marked.js" charset="utf-8"></script><script src="/app.js" charset="utf-8"></script></head><body onload="classify()"><header><a href="/"><img src="/assets/img/syrinx_logo.svg" alt="Syrinx Logo"></a><a href="#" id="bars" onclick="toggleNav(event)"><i class="fa fa-bars"></i></a><nav><a href="/services" id="servicesLink">Services</a> <a href="/case-studies" id="caseStudiesLink">Case Studies</a> <a href="/company" id="companyLink">Company</a> <a href="/blog" id="blogLink">Blog</a> <a href="/jobs" id="jobsLink">Jobs</a> <a href="/contact" id="contactLink">Contact</a></nav></header><div id="billboard"><h1></h1></div><div class="shim"></div><main><article>--- permalink: /404.html ---<script>if (window.location.href.indexOf("blogs.syrinx.com") > -1) {
+    var path = window.location.href.split("/")
+    if (path[path.length-1] == "") { delete path[path.length-1] } // In case there's a / at the end of the url.
+    window.location = "https://www.syrinx.com/blog/" + path[path.length-1] + ".html"
+  }
+  else if (window.location.href.indexOf("/blogs") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/hangout") > -1) { window.location = "http://tinyurl.com/syrinxhangout"; }
+  else if (window.location.href.indexOf("/about/management.aspx") > -1) { window.location = "https://www.syrinx.com/company"; }
+  else if (window.location.href.indexOf("/services/sharepoint.aspx") > -1) { window.location = "https://www.syrinx.com/services"; }
+  else if (window.location.href.indexOf("/about/news/SyrinxBBJRank&Promotions_FNL_11.17.08.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news.aspx") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/team.aspx") > -1) { window.location = "https://www.syrinx.com/company"; }
+  else if (window.location.href.indexOf("/services/authorit.aspx") > -1) { window.location = "https://www.syrinx.com/services"; }
+  else if (window.location.href.indexOf("/poker") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/careers.aspx") > -1) { window.location = "https://www.syrinx.com/jobs"; }
+  else if (window.location.href.indexOf("/news/Syrinx_Pharma_SharePoint_Win_FINAL_5.5.09.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/history.aspx") > -1) { window.location = "https://www.syrinx.com/company"; }
+  else if (window.location.href.indexOf("/news/BIDashboards_ByIanDicker_11.3.08.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/customers.aspx") > -1) { window.location = "https://www.syrinx.com/case-studies"; }
+  else if (window.location.href.indexOf("/charity.aspx") > -1) { window.location = "https://www.syrinx.com/company"; }
+  else if (window.location.href.indexOf("/articles.aspx") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/global.aspx") > -1) { window.location = "https://www.syrinx.com/"; }
+  else if (window.location.href.indexOf("/news/infoworld_dirty_it_jobs.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/services/dashboards.aspx") > -1) { window.location = "https://www.syrinx.com/services"; }
+  else if (window.location.href.indexOf("/business.aspx") > -1) { window.location = "https://www.syrinx.com/services"; }
+  else if (window.location.href.indexOf("/enterprise.aspx") > -1) { window.location = "https://www.syrinx.com/services"; }
+  else if (window.location.href.indexOf("/news/sox_compliance_article_landscape.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/SyrinxEasternBank_FINAL_10.6.09.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/cases/Cumberland.11.11.14.pdf") > -1) { window.location = "https://www.syrinx.com/assets/downloads/Cumberland.11.11.14.pdf"; }
+  else if (window.location.href.indexOf("/poker2008.aspx") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Syrinx%20VW%20Press%20Release%20FINAL%20for7.17. 07_on_letterhead.pd f") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/contact.aspx") > -1) { window.location = "https://www.syrinx.com/contact"; }
+  else if (window.location.href.indexOf("/testing.aspx") > -1) { window.location = "https://www.syrinx.com/services"; }
+  else if (window.location.href.indexOf("/news/2007_Inc_500_Press_release_final_on_letterhead.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/services/default.aspx") > -1) { window.location = "https://www.syrinx.com/services"; }
+  else if (window.location.href.indexOf("/about/default.aspx") > -1) { window.location = "https://www.syrinx.com/company"; }
+  else if (window.location.href.indexOf("/news/Vordel_Partners_with_Syrinx.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Syrinx_2009_Webinar_Series_FNL_3.2.09.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/contributions.aspx") > -1) { window.location = "https://www.syrinx.com/company"; }
+  else if (window.location.href.indexOf("/cases/Jnphillips.4.29.15.pdf") > -1) { window.location = "https://www.syrinx.com/assets/downloads/Jnphillips.4.29.15.pdf"; }
+  else if (window.location.href.indexOf("/services/sharepoint.aspx?gclid=COnvgLKmpZQCFQkRswodSjjXu Q") > -1) { window.location = "https://www.syrinx.com/services"; }
+  else if (window.location.href.indexOf("/techinfo/articles/article01.asp") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/default.asp?beats-by-dre-tour-headphone") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/vordel_partners_with_syrinx.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/default.asp?solo-beats-dre-hd-reviews") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/default.asp?beats-by-der") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/default.asp?dr-dre-the-beats-headphones-solo") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Syrinx08PokeforALS%20FNL_4%2018%2008%20_3_.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/poker2007.aspx") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/RCP_20080505.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/SyrinxBBJRank&Promotions_FNL_11.17.08.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Syrinx_Pharma_SharePoint_Win_FINAL_5.5.09.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Gilbane&SharePointMomentum_FNL_12.10.08.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Syrinx_Inc2008_Final_8%2025%2008.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/2007_Inc_500_Press_release_final_on_letterhead.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/26201_Syrinx_BBJ_Pac esetters_2008.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/infoworld_dirty_it_jobs.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/sox_compliance_article_landscape.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Syrinx_2009_Webinar_Series_FNL_3.2.09.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Syrinx%202007%20Milestones%20FINAL.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else if (window.location.href.indexOf("/news/Syrinx08PokeforALS%20FNL_4%2018%2008%20_3_.pdf") > -1) { window.location = "https://www.syrinx.com/blog"; }
+  else { window.location = "https://www.syrinx.com/notfound"; }</script></article></main><div class="shim reversed"></div><aside><h1>Have a project we can help with?</h1><a href="/contact">Talk To Us <i class="fa fa-arrow-circle-right"></i></a></aside><div class="shim"></div><footer><nav><a href="/services">Services</a> <a href="/case-studies">Case Studies</a> <a href="/company">Company</a> <a href="/blog">Blog</a> <a href="/jobs">Jobs</a> <a href="/contact">Contact</a></nav><p id="social"><a href="https://www.facebook.com/SyrinxConsulting"><i class="fa fa-facebook-official"></i></a> <a href="https://twitter.com/SyrinxCo"><i class="fa fa-twitter"></i></a> <a href="https://medium.com/@SyrinxCo"><i class="fa fa-medium"></i></a> <a href="https://github.com/SyrinxConsulting"><i class="fa fa-github"></i></a> <a href="https://www.linkedin.com/company/syrinx-consulting-corporation"><i class="fa fa-linkedin-square"></i></a></p><p>Copyright &copy; 2016 Syrinx Consulting Corporation. All Rights reserved.</p></footer><script type="text/javascript">(function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
             (i[r].q = i[r].q || []).push(arguments)
