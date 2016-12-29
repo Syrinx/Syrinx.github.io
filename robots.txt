@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.syrinx.com/sitemap.xml
+Sitemap: http://www.syrinx.com/sitemap.xml
