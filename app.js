@@ -1,12 +1,4 @@
-var classify, filterPosts, insertMarkdown, toggleNav;
-
-classify = function() {
-  var path;
-  path = window.location.pathname.split('/')[1];
-  document.getElementsByTagName('body')[0].className = path || 'home';
-  document.getElementsByTagName('link')[0].setAttribute('href', window.location);
-  return document.getElementsByTagName('link')[1].setAttribute('href', window.location);
-};
+var filterPosts, insertMarkdown, toggleNav;
 
 toggleNav = function(event) {
   var nav;
@@ -59,3 +51,9 @@ insertMarkdown = function(from, into) {
   };
   return xhr.send();
 };
+
+if (window.deferredInline) {
+  window.deferredInline.forEach(function(runnable) {
+    return runnable();
+  });
+}

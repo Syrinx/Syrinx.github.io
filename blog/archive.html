@@ -7,7 +7,6 @@
   <link rel="canonical" href="http://www.syrinx.com/blog/archive.html">
   
   <link rel="icon" href="/assets/img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/pure-min.css">
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
@@ -20,8 +19,12 @@
     "@context": "http://schema.org",
     "@type": "Corporation",
     "name": "Syrinx Consulting Corporation",
+    "logo": "http://www.syrinx.com/assets/img/syrinx-logo-square.png",
     "description": "Syrinx Consulting is a developer-owned and run, custom software engineering firm with over 80 full-time engineers located in the United States.",
-    "telephone": "+1-781-487-7800",
+    "telephone": [
+        "+1-781-487-7800",
+        "+1-773-913-8514"
+    ],
     "faxNumber": "+1-781-644-6071",
     "email": "info@syrinx.com",
     "url": "http://www.syrinx.com",
@@ -50,11 +53,8 @@
     }
   };
 
-  (function(d) {var wf = d.createElement('script'), s = d.scripts[0];wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';s.parentNode.insertBefore(wf, s);})(document);
+  (function(d) {var wf = d.createElement('script'), s = d.scripts[0];wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6/webfont.js';s.parentNode.insertBefore(wf, s);})(document);
   </script>
-
-  <script src="/assets/js/marked.js" charset="utf-8"></script>
-  <script src="/app.js" charset="utf-8"></script>
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -64,7 +64,7 @@
   })(window,document,'script','dataLayer','GTM-5P42XHQ');</script>
   <!-- End Google Tag Manager -->
 </head>
-<body onload="classify()">
+<body class="blog-archive">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P42XHQ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -83,7 +83,7 @@
     </nav>
   </header>
 
-  <div id="billboard"><h1></h1></div>
+  <div id="billboard"><span class="h1"></span></div>
 
   <div class="shim"></div>
 
@@ -98,7 +98,7 @@
   <div class="shim reversed"></div>
 
   <aside>
-    <h1>Have a project we can help with?</h1>
+    <span class="h1">Have a project we can help with?</span>
     <a href="/contact">Talk To Us <i class="fa fa-arrow-circle-right"></i></a>
   </aside>
 
@@ -122,6 +122,10 @@
     </p>
     <p>Copyright &copy; 2016 Syrinx Consulting Corporation. All Rights reserved.</p>
   </footer>
+
+  <script src="https://use.fontawesome.com/47ad468c8e.js"></script>
+  <script src="/assets/js/marked.min.js" charset="utf-8"></script>
+  <script src="/app.min.js" charset="utf-8"></script>
 
   <script type="text/javascript">
     //<![CDATA[
