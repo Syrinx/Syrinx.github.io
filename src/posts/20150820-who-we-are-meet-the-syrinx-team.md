@@ -1,10 +1,10 @@
 ---
-title: Who We Are, Meet the Syrinx Consulting Team
+title: Who We Are, Meet the Syrinx Team
 description: To really understand Syrinx and our values, you need to get to know our leaders. With that in mind, it's time to meet the members of Team Syrinx.
 archive_title: Who We Are - Meet the Syrinx Team
 ---
 
-# Who We Are, Meet the Syrinx Consulting Team
+# Who We Are, Meet the Syrinx Team
 
 At Syrinx, we pride ourselves on delivering a more customized, personalized software development experience for our customers. We work closely with our clients to understand exactly what they need, why they need it and how we can best deliver. We send our personnel to work on-site for our customers to ensure our developers can provide unbeatable support and services. And we focus heavily on creating long-lasting relationships with our developers, adding experience and reliability to our workforce.
 

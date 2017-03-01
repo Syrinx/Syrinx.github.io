@@ -18,23 +18,22 @@
     margin: 0
     display: table-cell
     vertical-align: middle
-    font-family: oswald
     text-transform: uppercase;
     text-shadow: 1px 1px 1px black
     background-color: rgba(0, 0, 0, .5)
-    font-size: 7em
-    font-weight: bold
+    font-size: 4em
+    font-weight: 700
     animation-name: billboard-h1
     animation-duration: .33s
-    line-height: 1em
+    line-height: 1
     padding: 0 1em
     letter-spacing: 2px
 
 body.home #billboard
-  background-image: url('assets/img/billboards/home.jpg')
+  background-image: url('assets/img/billboards/programming-abstract.jpg')
   height: 540px
   h1,.h1
-    padding-bottom: .5em
+    font-size: 3.5em
 body.services #billboard
   background-image: url('assets/img/billboards/services.jpg')
 body.case-studies #billboard
@@ -70,7 +69,8 @@ body.xamarin #billboard
 @media (max-width: 540px)
   #billboard
     h1,.h1
-      font-size: 3em
+      font-size: 2.5em !important
+      padding: 0
 
 p.billboard-buttons
   margin-top: -18em

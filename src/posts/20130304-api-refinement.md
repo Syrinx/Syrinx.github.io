@@ -1,11 +1,11 @@
 ---
-title: API Refinement from Syrinx Consulting
+title: API Refinement from Syrinx
 description: We’ve talked about a few characteristics of a good API. APIs should be easy to use right? Well, sure but what does that mean?
 archive_title: API Refinement
 link: http://blogs.syrinx.com/uncategorized/api-refinement/
 ---
 
-# API Refinement from Syrinx Consulting
+# API Refinement from Syrinx
 
 We’ve already [talked](/blog/20121121-real-world-apis.html) about a few characteristics of a good API but let’s explore one a little. APIs should be easy to use right? Well, sure … but what does that mean? What could be hard about /orderSpecial? Not much. We know what the parameters are: number, size, and drink. These are documented and well known. Could this be used in incorrectly? But what exactly does the ‘extras’ mean? Does saying extras=ketchup mean “Please give add a few ketchup packets for my fries” or does it mean “Please add ketchup to my burger” or even stranger “Please add ketchup to my drink”? OK, chances are that last one isn’t a request we’re going to ever see but it illustrates the point. Previously, we assumed extras was added to the burger. That’s all it was – an assumption. The fast food crew should perform the action in a consistent way each time. Which is it? We won’t know until the response comes back and we’re either excited or disappointed, or angry if ketchup is in our Coke!
 

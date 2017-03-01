@@ -1,17 +1,20 @@
 header
   background-color: rgba(0, 0, 0, .8)
-  height: 3.3em
+  box-shadow: 1px 3px 4px #000
+  max-height: 50px;
   position: fixed
   top: 0
   left: 0
   right: 0
   z-index: 1
 
+  @media (max-width: 767px)
+    min-height: 50px
+
   img
     height: 50px
     width: 189px
     background-color: syrinx_blue
-    margin-left: 1.5em
     padding: .5em
     box-shadow: 1px 1px 3px black
     transition: all 0.1s ease
@@ -19,38 +22,55 @@ header
     &:hover
       transform: scale(1.1, 1.1) rotate(-1deg)
 
+  .site-logo
+    display: block
+    margin-left: 1.5em
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1001
+
   #bars
     display: none
     color: syrinx_orange
     float: right
     font-size: 2em
+    line-height: 1
     margin-right: .33em
     margin-top: .33em
 
   nav
     float: right
-    margin-right: .1em
-    width: calc(100% - 250px)
+    z-index: 1000
 
     a
       display: inline-block
-      font-size: 1.1em
-      line-height: 1.5em
+      vertical-align: top
+      font-size: 15px
+      line-height: 1.5
       color: white
       text-decoration: none
       padding: 0 .5em
       margin: .8em .5em
-      font-weight: 600
+      font-weight: 300
       transition: all 0.1s ease
+      text-transform: uppercase
+      letter-spacing: 0.1em
+
+      span
+        display: inline-block;
 
       &:hover
         color: syrinx_orange
-        transform: scale(1.1, 1.1)
+        //transform: scale(1.1, 1.1)
 
-      &#contactLink
-        background-color: white
-        color: black
-        float: right
+     a#contactLink
+        background-color: syrinx_orange
+        color: #fff
+        margin: 0 0 0 0.4em
+        padding: 0.8em 1.2em
+        &:hover
+          background-color: syrinx_blue
 
 body.home         a#homeLink,
 body.services     a#servicesLink,
@@ -59,7 +79,9 @@ body.company      a#companyLink,
 body.blog         a#blogLink,
 body.jobs         a#jobsLink
   color: syrinx_orange
-  border-bottom: 2px solid syrinx_orange
+
+  span
+    border-bottom: 2px solid syrinx_orange
 
 @media (max-width: 1023px)
   header
@@ -68,10 +90,12 @@ body.jobs         a#jobsLink
     nav
       display: none
       clear: both
+      padding-top: 18px
       position: absolute
       top: 3.3em
       right: -2px
-      background-color: transparent
+      background-color: rgba(0,0,0,0.8)
+      width: 100%
       &.show
         display: block
       a
@@ -79,13 +103,16 @@ body.jobs         a#jobsLink
         display: inline-block
         float: right
         clear: both
-        background-color: rgba(0, 0, 0, .8) !important
+        background-color: transparent !important
         color: white !important
         text-align: right
         border-bottom: 0px !important
         padding: .33em .67em
         &:hover
           transform: none
+        &#contactLink
+          margin: 0
+          padding: .33em .67em
 
 @media (max-width: 540px)
   header

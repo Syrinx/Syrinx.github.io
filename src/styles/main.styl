@@ -8,12 +8,10 @@ article
   padding: 0 1em
 
   h1, h2, .h1
-    font-family: oswald
-    line-height: 1em
+    line-height: 1
 
   .h1
     font-size: 2em
-    font-weight: bold
     margin: .67em 0
 
   @media (max-width: 767px)
@@ -23,11 +21,13 @@ article
 
   h6
     font-size: 1em
-    font-family: oswald
     margin: 0
 
+  p
+    font-weight: 300
+
   a
-    color: OrangeRed
+    color: syrinx_blue
     &.logoLink
       background-color: transparent !important
     &.textLink
@@ -36,7 +36,7 @@ article
     &:hover
       color: white
       //color: #000
-      background-color: OrangeRed
+      color: syrinx_orange
       text-decoration: none
 
   .lead
@@ -45,7 +45,7 @@ article
     margin-bottom: 1.5em
 
     span
-      background-color: DarkSlateBlue
+      background-color: syrinx_blue
       color: white
       padding: 0 .5em
       box-shadow: 1px 1px 3px #333
@@ -55,17 +55,21 @@ article
     text-transform: none
     margin-bottom: 1em
     font-size: 1.5em
-    line-height: 1.5em
+    line-height: 1.5
     @media (max-width: 767px)
       font-size: 1.3em
 
   .buttonLink
     background-color: #fd9d27
     color: white
+    display: inline-block
+    font-family: oswald
+    font-weight: 400
     text-decoration: none
-    float: left
     padding: .5em 1em
     transition: all 0.1s ease
+    text-transform: uppercase
+    letter-spacing: 0.1em
     @media (max-width: 767px)
       padding: .3em .67em
       margin-bottom: 1em
@@ -112,31 +116,31 @@ article
     font-size: .9em
 
     i
-      color: DarkSlateBlue
+      color: syrinx_blue
       display: inline-block
       width: 1.5em
 
     span
-      background-color: DarkSlateBlue
+      background-color: syrinx_blue
       color: white
       padding: 0 .33em
       box-shadow: 1px 1px 3px #333
 
   .apply-btn
-    background-color: Yellow
-    color: black !important
+    background-color: syrinx_orange
+    color: #fff !important
     text-decoration: none
     padding: .5em 1em
     margin-top: .5em
     display: inline-block
     font-family: 'Oswald', sans-serif
-    box-shadow: 1px 1px 3px silver
     transition: all 0.1s ease
-    box-shadow: 1px 1px 3px #333
+    text-transform: uppercase;
+    letter-spacing: .1em;
 
     &:hover
       transform: scale(1.1, 1.1)
-      background-color: GreenYellow !important
+      background-color: syrinx_blue !important
 
     i
       margin-left: .33em
@@ -168,11 +172,11 @@ article
 
   blockquote
     p
-      background-color: DarkSlateBlue
+      background-color: syrinx_blue
       display: inline-block
       color: white
       font-size: 1.5em
-      line-height: 1.33em
+      line-height: 1.33
       font-style: italic
       transform: rotate(-1deg)
       padding: 0 .5em
@@ -221,7 +225,7 @@ body.blog main article
   p:first-of-type
     margin-bottom: 1em
     font-size: 1.5em
-    line-height: 1.5em
+    line-height: 1.5
     @media (max-width: 767px)
       font-size: 1.3em
   img
@@ -299,6 +303,9 @@ body.xamarin
 
   h2
     position: relative
+    font-family: oswald
+    font-weight: 700
+    font-size: 24px
     top: 18px
     left: 10px
 
@@ -327,3 +334,220 @@ body.xamarin
 @media (max-width: 767px)
   .mobile-hide
     display: none
+
+#case-studies
+  text-align: center
+
+  .case-study-items
+    margin-left: -10px
+    margin-right: -10px
+    @media (max-width: 767px)
+      margin-left: 0
+      margin-right: 0
+
+  .case-study-item
+    margin-top: 10px
+    margin-bottom: 10px
+
+    .item-wrap
+      margin: 0 10px
+
+    a
+      display: table
+      background-size: cover
+      background-position: center center
+      background-repeat: no-repeat
+      height: 300px
+      text-decoration: none
+      position: relative
+      width: 100%
+
+      &:hover .item-title
+        color: #fff !important
+        text-shadow: 1px 1px 1px #000
+        background-color: rgba(0,0,0,0.5)
+
+    .item-title
+      display: table-cell
+      color: #c0c0c0 !important
+      font-size: 22px
+      line-height: 1.25
+      text-align: center
+      background-color: rgba(0,0,0,0.67)
+      margin: 0
+      padding-right: 10px
+      padding-left: 10px
+      transition: all .5s ease
+      vertical-align: middle
+
+    @media (max-width: 767px)
+      a
+        height: 150px
+        margin-right: 0
+        margin-left: 0
+
+body.home
+  #features
+    text-align: center
+
+    .feature-items
+      margin-left: -10px
+      margin-right: -10px
+      @media (max-width: 767px)
+        margin-left: 0
+        margin-right: 0
+
+    .feature-item
+      margin-top: 10px
+      margin-bottom: 10px
+
+      .item-wrap
+        margin: 0 10px
+        @media (max-width: 767px)
+          margin-left: 0
+          margin-right: 0
+
+      .item-icon
+        display: inline-block
+        font-size: 3em
+        line-height: 1
+
+      .item-text
+        max-width: 360px
+        margin-right: auto
+        margin-left: auto
+
+      .item-title
+        font-size: 22px
+
+      .buttonLink
+        margin-top: 1em
+
+    .feature-item-1,.feature-item-3
+      .item-text
+        @media (min-width: 810px)
+          max-width: 260px
+
+  h1
+    font-size: 45px
+    font-weight: 500
+    margin-bottom: 0
+    text-align: center !important
+
+  article p.lead
+    font-size: 1.25em
+    margin-bottom: 2.5em
+    text-align: center
+
+  .imgBox
+    width: 11%
+    height: 100px
+    margin: 1% 2.5%
+
+    @media (max-width: 767px)
+      width: 45%
+
+  p.billboard-buttons
+    a.buttonLink
+      font-size: 1.3em
+
+      &:hover,&:focus
+        background-color: syrinx_blue
+
+body.services
+  h1
+    font-size: 45px
+    font-weight: 500
+    margin-bottom: 0
+    text-align: center !important
+
+  article
+    p.lead
+      font-size: 1.25em
+      margin-bottom: 2.5em
+      text-align: center
+
+  .imgHeading
+    display: block
+    margin-bottom: 1.25em
+    position: relative
+    clearfix()
+
+    img
+      float: left
+      width: 50px
+      height: 50px
+
+    h2
+      font-size: 1.5em
+      margin: 0
+      position: relative
+      top: 18px
+      left: 10px
+      @media (max-width: 767px)
+        position: absolute
+        top: 50%;
+        left: 60px
+        transform: translateY(-50%);
+
+  #services
+    text-align: center
+
+    .feature-items
+      margin-top: 2.5em
+      margin-left: -10px
+      margin-right: -10px
+      @media (max-width: 767px)
+        margin-left: 0
+        margin-right: 0
+
+    .feature-item
+      margin-top: 15px
+      margin-bottom: 15px
+
+      a.item-wrap
+        color: #000
+        text-decoration: none
+
+      .item-wrap
+        border: 1px solid #ccc
+        display: block
+        margin: 0 10px
+        padding: 18px 18px
+        @media (max-width: 767px)
+          margin-left: auto
+          margin-right: auto
+          max-width: 360px
+
+      .item-icon
+        display: inline-block
+        font-size: 3em
+        line-height: 1
+
+      .item-text
+        max-width: 360px
+        margin-right: auto
+        margin-left: auto
+
+      .item-title
+        font-size: 22px
+
+      .item-read-more
+        margin-top: 1em
+        text-transform: uppercase;
+
+  #approach
+    text-align: center
+
+    h2
+      text-align: center !important
+
+  #case-studies
+    .case-study-item
+      a
+        height: 240px
+        @media (max-width: 767px)
+          height: 150px
+
+      .item-title
+        font-size: 20px

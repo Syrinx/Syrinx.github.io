@@ -14,4 +14,4 @@ Document-based data warehouses bring together disparate sources and add context 
 
 To achieve front-end application integration, developers need to focus first on the user experience, then consider which scripting languages or off-the-shelf products to utilize. Beyond usability, key priorities should be consistency, sufficient capacity and speed.
 
-Thanks for watching, and come back soon to see more videos from Syrinx Consulting.
+Thanks for watching, and come back soon to see more videos from Syrinx.

@@ -14,4 +14,4 @@ The key significance of an open source .NET framework is that it opens the way f
 
 Open source means .NET frameworks have become more accessible, more frequently updated and open to customer contributions. All of this makes .NET an appealing option for a huge range of projects.
 
-Thanks for watching, and check back soon for more info from Syrinx Consulting.
+Thanks for watching, and check back soon for more info from Syrinx.

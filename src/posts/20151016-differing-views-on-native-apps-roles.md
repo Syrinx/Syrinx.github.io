@@ -1,6 +1,6 @@
 ---
 title: Differing Views on Native Apps' Roles by Syrinx
-description: Syrinx Consulting believes with the right goals and the right approach, native apps can deliver powerful results for businesses in any scenario.
+description: Syrinx believes with the right goals and the right approach, native apps can deliver powerful results for businesses in any scenario.
 archive_title: Differing views on native apps' roles
 ---
 
