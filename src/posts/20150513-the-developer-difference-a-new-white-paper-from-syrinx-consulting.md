@@ -1,7 +1,7 @@
 ---
 title: The Developer Difference, White Paper from Syrinx
 description: Software development is a top-level priority for just about any organization. To this end, a third-party software consultancy is key.
-archive_title: The Developer Difference - A New White Paper from Syrinx
+archive_title: The Developer Difference - A New White Paper from Syrinx Consulting
 ---
 
 # The Developer Difference, White Paper from Syrinx

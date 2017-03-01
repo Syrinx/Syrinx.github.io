@@ -15,4 +15,4 @@ For Android, you're going to want to check out the Android multimedia framework.
 
 For iOS, you'll probably want to look at the YouTube Helper. This is an open source library that can create a bridge between iOS application code and YouTube's JavaScript code, giving you control over the YouTube player.
 
-Thanks for watching. Come back soon for more videos from Syrinx.
+Thanks for watching. Come back soon for more videos from Syrinx Consulting.

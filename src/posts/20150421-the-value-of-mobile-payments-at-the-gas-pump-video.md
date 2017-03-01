@@ -14,4 +14,4 @@ The benefits here are significant. This approach allows customers to pay for the
 
 As mobile payments become increasingly commonplace, an integrated gas pump POS system holds obvious appeal, and will likely become more popular in the coming months. To be effective, though, these systems must fully integrate with the fuel and business infrastructure.
 
-Thanks for watching, and be sure to look for more videos from Syrinx.
+Thanks for watching, and be sure to look for more videos from Syrinx Consulting.

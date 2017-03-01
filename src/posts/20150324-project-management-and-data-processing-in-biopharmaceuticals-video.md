@@ -14,4 +14,4 @@ Biopharmaceutical firms tackle incredibly complex research and development on a 
 
 All of this suggests that biopharma companies need to invest in robust data processing solutions while embracing a light touch when it comes to project management. It's a difficult challenge, one that makes third-party expertise and guidance essential.
 
-Thanks for watching, and be sure to look for more videos from Syrinx.
+Thanks for watching, and be sure to look for more videos from Syrinx Consulting.

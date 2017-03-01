@@ -20,8 +20,8 @@ To that end, you need to develop high-quality mobile payment apps, which require
 • **Security**: How can you maximize data protection every step of the way?  
 • **Testing**: How will you limit the risk of a crash?
 
-That may seem like a lot to keep in mind, and it is. That's why it's so valuable to partner with an industry-leading mobile development firm like Syrinx.
+That may seem like a lot to keep in mind, and it is. That's why it's so valuable to partner with an industry-leading mobile development firm like Syrinx Consulting.
 
-To highlight the value of partnering with Syrinx for mobile payment app creation, consider the case of Cumberland Farms. We developed and launched a mobile pay app for Cumberland in nine months. One year later, that app had delivered $100 million in incremental revenue.
+To highlight the value of partnering with Syrinx Consulting for mobile payment app creation, consider the case of Cumberland Farms. We developed and launched a mobile pay app for Cumberland in nine months. One year later, that app had delivered $100 million in incremental revenue.
 
 ![Competitive Advantage with Mobile Payments Infographic](http://opticcf.brafton.com/14113676.image)

@@ -7,7 +7,7 @@ link: http://blogs.syrinx.com/news/syrinx-partners-with-cloud-and-soa-experts-vo
 
 # Syrinx Partners With Cloud and SOA Experts Vordel
 
-Syrinx is proud to announce [our latest partnership with with Vordel](http://online.wsj.com/article/PR-CO-20120320-906239.html), a company that specializes in using new technology such as mobile computing, social networking, and Cloud computing to help companies build revenue, improve customer intimacy, and lower their costs. With Vordel recently launching their  [Sharepoint Gateway](http://www.vordel.com/solutions/sharepoint_gateway.html) services, we are happy to offer our extensive Sharepoint experience in order to ensure customers an optimal experience.
+Syrinx Consulting is proud to announce [our latest partnership with with Vordel](http://online.wsj.com/article/PR-CO-20120320-906239.html), a company that specializes in using new technology such as mobile computing, social networking, and Cloud computing to help companies build revenue, improve customer intimacy, and lower their costs. With Vordel recently launching their  [Sharepoint Gateway](http://www.vordel.com/solutions/sharepoint_gateway.html) services, we are happy to offer our extensive Sharepoint experience in order to ensure customers an optimal experience.
 
 ![Vordel](/assets/img/blog/vordel.png)
 

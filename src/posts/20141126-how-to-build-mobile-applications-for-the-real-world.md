@@ -7,7 +7,7 @@ link: http://blogs.syrinx.com/uncategorized/how-to-build-mobile-applications-for
 
 # How To Build Mobile Applications for the Real World
 
-unCon 2014 Session: Building Real-World Mobile Payment Applications by Andrew Gelina, Founder & CEO, Syrinx, Twitter @andrewgelina, creator of “Pay-at-the-Pump” for Cumberland Farms
+unCon 2014 Session: Building Real-World Mobile Payment Applications by Andrew Gelina, Founder & CEO, Syrinx Consulting, Twitter @andrewgelina, creator of “Pay-at-the-Pump” for Cumberland Farms
 
 The 2014 Mass Technology Leadership Council (MassTLC) unConference took place on Friday, November 14th, 2014 at the Hynes Convention Center in Boston. Thought leaders, experts, and entrepreneurs convened to drive discussions on a variety of leading technology issues impacting the industry today.
 

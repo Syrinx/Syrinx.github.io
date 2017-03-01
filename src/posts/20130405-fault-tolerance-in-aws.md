@@ -1,5 +1,5 @@
 ---
-title: Fault Tolerance in the Cloud by Syrinx
+title: Fault Tolerance in the Cloud by Syrinx Consulting
 description: One way we mitigate faults is building automatic redundancies. That is, we architect software in a way that if a component fails, a backup kicks in.
 archive_title: Fault tolerance in the cloud
 link: http://blogs.syrinx.com/enterprise-application-development/fault-tolerance-in-aws/

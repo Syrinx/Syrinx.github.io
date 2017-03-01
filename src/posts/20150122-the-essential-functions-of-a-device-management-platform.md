@@ -1,6 +1,6 @@
 ---
 title: Key Functions of a Device Management Platform
-description: Massachusetts's Syrinx firm believes collecting, storing and processing data are signature features of device management platforms.
+description: Massachusetts's Syrinx Consulting firm believes collecting, storing and processing data are signature features of device management platforms.
 archive_title: The essential functions of a device management platform
 ---
 
