@@ -1,4 +1,4 @@
-var filterPosts, insertMarkdown, toggleNav;
+var filterPosts, getUnderservedEpisodeID, getUnderservedEpisodeTitle, insertMarkdown, toggleNav, underserved;
 
 toggleNav = function(event) {
   var nav;
@@ -56,4 +56,39 @@ if (window.deferredInline) {
   window.deferredInline.forEach(function(runnable) {
     return runnable();
   });
+}
+
+getUnderservedEpisodeID = function() {
+  var xhr;
+  xhr = new XMLHttpRequest();
+  xhr.open('GET', "http://underserved.libsyn.com/");
+  xhr.onreadystatechange = function() {
+    var id;
+    if (xhr.readyState === 4) {
+      id = xhr.responseText.match(/id\/(.*?)\/height/g)[0].replace('id/', '').replace('/height', '');
+      return document.getElementById("underserved-player").setAttribute('src', "//html5-player.libsyn.com/embed/episode/id/" + id + "/height/90/theme/custom/thumbnail/yes/direction/backward/render-playlist/no/custom-color/87A93A/");
+    }
+  };
+  return xhr.send();
+};
+
+getUnderservedEpisodeTitle = function() {
+  var xhr;
+  xhr = new XMLHttpRequest();
+  xhr.open('GET', "https://underserved.libsyn.com/rss");
+  xhr.onreadystatechange = function() {
+    var title;
+    if (xhr.readyState === 4) {
+      title = xhr.responseText.match(/<itunes:title>(.*?)\<\/itunes:title>/g)[0].replace('<itunes:title>', '').replace('</itunes:title>', '');
+      return document.getElementById("underserved-title").innerHTML = "What's New: Underserved, " + title;
+    }
+  };
+  return xhr.send();
+};
+
+underserved = document.getElementById("underserved");
+
+if (underserved !== null) {
+  getUnderservedEpisodeID();
+  getUnderservedEpisodeTitle();
 }
