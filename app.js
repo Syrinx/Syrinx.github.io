@@ -1,4 +1,4 @@
-var filterPosts, getUnderservedEpisodeID, getUnderservedEpisodeTitle, insertMarkdown, toggleNav, underserved;
+var filterPosts, getUnderservedEpisodeID, getUnderservedEpisodeTitleAndDescription, insertMarkdown, toggleNav, underserved;
 
 toggleNav = function(event) {
   var nav;
@@ -72,15 +72,17 @@ getUnderservedEpisodeID = function() {
   return xhr.send();
 };
 
-getUnderservedEpisodeTitle = function() {
+getUnderservedEpisodeTitleAndDescription = function() {
   var xhr;
   xhr = new XMLHttpRequest();
   xhr.open('GET', "https://underserved.libsyn.com/rss");
   xhr.onreadystatechange = function() {
-    var title;
+    var description, title;
     if (xhr.readyState === 4) {
       title = xhr.responseText.match(/<itunes:title>(.*?)\<\/itunes:title>/g)[0].replace('<itunes:title>', '').replace('</itunes:title>', '');
-      return document.getElementById("underserved-title").innerHTML = "What's New: Underserved, " + title;
+      description = xhr.responseText.match(/<description><!\[CDATA\[<div>(.*?)\<\/div>/g)[0].replace('<description><![CDATA[<div>', '').replace('</div>', '');
+      document.getElementById("underserved-title").innerHTML = "What's New: Underserved, " + title;
+      return document.getElementById("underserved-description").innerHTML = description;
     }
   };
   return xhr.send();
@@ -90,5 +92,5 @@ underserved = document.getElementById("underserved");
 
 if (underserved !== null) {
   getUnderservedEpisodeID();
-  getUnderservedEpisodeTitle();
+  getUnderservedEpisodeTitleAndDescription();
 }
