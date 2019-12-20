@@ -80,7 +80,7 @@ getUnderservedEpisodeTitleAndDescription = function() {
     var description, title;
     if (xhr.readyState === 4) {
       title = xhr.responseText.match(/<itunes:title>(.*?)\<\/itunes:title>/g)[0].replace('<itunes:title>', '').replace('</itunes:title>', '');
-      description = xhr.responseText.match(/<description><!\[CDATA\[<div>(.*?)\<\/div>/g)[0].replace('<description><![CDATA[<div>', '').replace('</div>', '');
+      description = xhr.responseText.match(/<description><!\[CDATA\[<p>(.*?)\<\/p>/g)[0].replace('<description><![CDATA[<div>', '').replace('</div>', '');
       document.getElementById("underserved-title").innerHTML = "What's New: Underserved, " + title;
       return document.getElementById("underserved-description").innerHTML = description;
     }
