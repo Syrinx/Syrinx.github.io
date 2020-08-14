@@ -1,4 +1,4 @@
-var filterPosts, getUnderservedEpisodeID, getUnderservedEpisodeTitleAndDescription, insertMarkdown, toggleNav, underserved;
+var acceptGDPR, acceptedGDPR, filterPosts, getUnderservedEpisodeID, getUnderservedEpisodeTitleAndDescription, insertMarkdown, toggleNav, underserved;
 
 toggleNav = function(event) {
   var nav;
@@ -93,4 +93,17 @@ underserved = document.getElementById("underserved");
 if (underserved !== null) {
   getUnderservedEpisodeID();
   getUnderservedEpisodeTitleAndDescription();
+}
+
+acceptGDPR = function() {
+  document.getElementById("gdpr").classList.remove("visible");
+  return document.cookie = "gdpr=allow";
+};
+
+acceptedGDPR = function() {
+  return document.cookie.includes("gdpr=allow");
+};
+
+if (!acceptedGDPR()) {
+  document.getElementById("gdpr").classList.add("visible");
 }
