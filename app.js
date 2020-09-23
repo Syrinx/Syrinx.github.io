@@ -61,7 +61,7 @@ if (window.deferredInline) {
 getUnderservedEpisodeID = function() {
   var xhr;
   xhr = new XMLHttpRequest();
-  xhr.open('GET', "http://underserved.libsyn.com/");
+  xhr.open('GET', "https://underserved.libsyn.com/");
   xhr.onreadystatechange = function() {
     var id;
     if (xhr.readyState === 4) {
