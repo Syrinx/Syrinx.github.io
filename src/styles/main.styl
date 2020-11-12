@@ -522,30 +522,39 @@ body.services
         margin-right: 0
 
     .feature-item
+      text-decoration: none
       margin-top: 15px
       margin-bottom: 15px
 
       .item-wrap
-        margin: 0 10px
-        @media (max-width: 767px)
-          margin-left: 0
-          margin-right: 0
+        padding: 3em
 
       .item-icon
         display: inline-block
         font-size: 3em
         line-height: 1
-
-      .item-text
-        max-width: 360px
-        margin-right: auto
-        margin-left: auto
+        transition: all 0.1s ease
 
       .item-title
         font-size: 22px
 
-      .buttonLink
-        margin-top: 1em
+      .item-text
+        color: #777
+
+    .feature-item:hover
+      background-color: rgba(0, 0, 0, 0.03)
+
+      .item-icon
+        transform: scale(1.1, 1.1)
+
+      .item-title
+        color: #085aa4
+
+      .item-text
+        color: black
+
+      .item-read-more
+        color: #085aa4
 
   #approach
     text-align: center
