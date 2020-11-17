@@ -248,6 +248,7 @@ gulp.task 'buildOptimizedScripts', ['clean'], ->
     .pipe gulp.dest "#{options.dist}/assets/js"
 
 gulp.task 'build', ['misc', 'buildAssets', 'buildStylus', 'buildCoffee', 'buildMarkup', 'buildBlog', 'buildSitemap']
+# gulp.task 'build', ['misc', 'buildAssets', 'buildStylus', 'buildCoffee', 'buildMarkup', 'buildSitemap']
 
 gulp.task 'connect', -> connect.server root: options.dist, livereload: true
 
